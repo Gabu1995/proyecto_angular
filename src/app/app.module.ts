@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonModule } from 'primeng/button';
 
+import { MenubarModule } from 'primeng/menubar';
+
 import { SplitButtonModule } from 'primeng/splitbutton';
 
 @NgModule({
@@ -19,7 +21,8 @@ import { SplitButtonModule } from 'primeng/splitbutton';
     AppRoutingModule,
     BrowserAnimationsModule,
     ButtonModule,
-    SplitButtonModule
+    SplitButtonModule,
+    MenubarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
