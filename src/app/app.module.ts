@@ -12,6 +12,11 @@ import { MenubarModule } from 'primeng/menubar';
 
 import { SplitButtonModule } from 'primeng/splitbutton';
 
+//GALERIA
+import { ImageModule } from 'primeng/image';
+import { GalleriaModule } from 'primeng/galleria';
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -22,7 +27,9 @@ import { SplitButtonModule } from 'primeng/splitbutton';
     BrowserAnimationsModule,
     ButtonModule,
     SplitButtonModule,
-    MenubarModule
+    MenubarModule,
+    ImageModule,
+    GalleriaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
