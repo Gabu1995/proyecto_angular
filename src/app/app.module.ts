@@ -15,12 +15,23 @@ import { SplitButtonModule } from 'primeng/splitbutton';
 //GALERIA
 import { ImageModule } from 'primeng/image';
 import { GalleriaModule } from 'primeng/galleria';
+import { BotonesComponent } from './botones/botones.component';
+import { GaleryComponent } from './galery/galery.component';
+import { MessageService } from 'primeng/api';
+import { MessagesModule } from 'primeng/messages';
+import { MensajeriaComponent } from './mensajeria/mensajeria.component';
+import { ToastModule } from 'primeng/toast';
+
+
 
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [		
+    AppComponent,
+    BotonesComponent,
+      GaleryComponent,
+      MensajeriaComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,9 +40,12 @@ import { GalleriaModule } from 'primeng/galleria';
     SplitButtonModule,
     MenubarModule,
     ImageModule,
-    GalleriaModule
+    GalleriaModule,
+    MessagesModule, 
+    ToastModule
+    
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
