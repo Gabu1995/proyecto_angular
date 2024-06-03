@@ -25,6 +25,7 @@ export class AppComponent implements OnInit {
       { label: 'Botones', icon: 'pi pi-bullseye', command: () => this.redirect("botones") },
       { label: 'Media', icon: 'pi pi-images', command: () => this.redirect("galeria") },
       { label: 'Mensajeria', icon: 'pi pi-envelope', command: () => this.redirect("mensajeria") },
+      { label: 'Carrusel', icon: 'pi pi-envelope', command: () => this.redirect("carrusel") },
       { label: 'Organizacion Texto', icon: 'pi pi-sort-alpha-down', command: () => this.redirect("organizacion") },
       
       { separator: true }

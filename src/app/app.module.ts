@@ -21,6 +21,11 @@ import { MessageService } from 'primeng/api';
 import { MessagesModule } from 'primeng/messages';
 import { MensajeriaComponent } from './mensajeria/mensajeria.component';
 import { ToastModule } from 'primeng/toast';
+import { CarouselComponent } from './component/carousel/carousel.component';
+import { CarouselService } from './service/carousel/carousel.service';
+import { CarouselModule } from 'primeng/carousel';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -30,7 +35,8 @@ import { ToastModule } from 'primeng/toast';
     AppComponent,
     BotonesComponent,
       GaleryComponent,
-      MensajeriaComponent
+      MensajeriaComponent,
+      CarouselComponent
    ],
   imports: [
     BrowserModule,
@@ -42,10 +48,12 @@ import { ToastModule } from 'primeng/toast';
     ImageModule,
     GalleriaModule,
     MessagesModule, 
-    ToastModule
+    ToastModule,
+    CarouselModule,
+    HttpClientModule,  
     
   ],
-  providers: [MessageService],
+  providers: [MessageService, CarouselService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
