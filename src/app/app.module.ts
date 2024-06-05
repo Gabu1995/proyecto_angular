@@ -25,6 +25,8 @@ import { CarouselComponent } from './component/carousel/carousel.component';
 import { CarouselService } from './service/carousel/carousel.service';
 import { CarouselModule } from 'primeng/carousel';
 import { HttpClientModule } from '@angular/common/http';
+import { MessageModule } from 'primeng/message';
+
 
 
 
@@ -47,7 +49,8 @@ import { HttpClientModule } from '@angular/common/http';
     MenubarModule,
     ImageModule,
     GalleriaModule,
-    MessagesModule, 
+    MessagesModule,
+    MessageModule, 
     ToastModule,
     CarouselModule,
     HttpClientModule,  
