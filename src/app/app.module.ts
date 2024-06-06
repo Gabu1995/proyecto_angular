@@ -26,6 +26,8 @@ import { CarouselService } from './service/carousel/carousel.service';
 import { CarouselModule } from 'primeng/carousel';
 import { HttpClientModule } from '@angular/common/http';
 import { MessageModule } from 'primeng/message';
+import { CardComponent } from './card/card.component';
+import { CardModule } from 'primeng/card';
 
 
 
@@ -38,7 +40,8 @@ import { MessageModule } from 'primeng/message';
     BotonesComponent,
       GaleryComponent,
       MensajeriaComponent,
-      CarouselComponent
+      CarouselComponent,
+      CardComponent
    ],
   imports: [
     BrowserModule,
@@ -53,7 +56,8 @@ import { MessageModule } from 'primeng/message';
     MessageModule, 
     ToastModule,
     CarouselModule,
-    HttpClientModule,  
+    HttpClientModule, 
+    CardModule 
     
   ],
   providers: [MessageService, CarouselService],

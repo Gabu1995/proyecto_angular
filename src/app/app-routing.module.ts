@@ -4,6 +4,7 @@ import { BotonesComponent } from './botones/botones.component';
 import { GaleryComponent } from './galery/galery.component';
 import { MensajeriaComponent } from './mensajeria/mensajeria.component';
 import { CarouselComponent } from './component/carousel/carousel.component';
+import { CardComponent } from './card/card.component';
 
 const routes: Routes = [
   {
@@ -27,9 +28,14 @@ const routes: Routes = [
     component: CarouselComponent
   },
   {
+    path: 'card',
+    component: CardComponent
+  },
+  {
     path: '**',
     redirectTo: "botones"
   }
+ 
 ]
 
 @NgModule({

@@ -27,6 +27,7 @@ export class AppComponent implements OnInit {
       { label: 'Mensajeria', icon: 'pi pi-envelope', command: () => this.redirect("mensajeria") },
       { label: 'Carrusel', icon: 'pi pi-envelope', command: () => this.redirect("carrusel") },
       { label: 'Organizacion Texto', icon: 'pi pi-sort-alpha-down', command: () => this.redirect("organizacion") },
+      { label: 'Card', icon: 'pi pi-images', command: () => this.redirect("card") },
       
       { separator: true }
     ];
